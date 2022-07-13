@@ -1,4 +1,6 @@
-﻿/ContactBook/obj/Debug/netcoreapp3.1-windows/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+﻿/ContactBook/ContactBook/obj/*
+/ContactBook/ContactBook/bin/*
+/ContactBook/obj/Debug/netcoreapp3.1-windows/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
 /ContactBook.Contact.Domain/obj/Debug/netcoreapp3.1-windows/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
 /ContactBook.Contact.Persistence/obj/Debug/netcoreapp3.1-windows/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
 /ContactBook.Contracts/obj/Debug/netcoreapp3.1-windows/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs

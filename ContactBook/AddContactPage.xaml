@@ -1,0 +1,58 @@
+﻿<Page x:Class="ContactBook.AddContactPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:ContactBook"
+      mc:Ignorable="d"
+      Title="AddContactPage" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="3" Grid.ColumnSpan="2" FontSize="25" 
+                   TextDecorations="Underline">Add Contact</TextBlock>
+        
+        <TextBlock Grid.Column="2" Grid.Row="1" FontSize="20" Grid.ColumnSpan="4" FontStyle="Oblique" 
+                   VerticalAlignment="Bottom" TextAlignment="Left" Margin="0 10">Name</TextBlock>
+        <TextBox Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="4" FontSize="18" x:Name="Name"/>
+        
+        <TextBlock Grid.Column="2" Grid.Row="3" FontSize="20" Grid.ColumnSpan="4" FontStyle="Oblique" 
+                   VerticalAlignment="Bottom" TextAlignment="Left" Margin="0 10">Surname</TextBlock>
+        <TextBox Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="4" FontSize="18" x:Name="Surname"/>
+        
+        <TextBlock Grid.Column="2" Grid.Row="5" FontSize="20" Grid.ColumnSpan="4" FontStyle="Oblique" 
+                   VerticalAlignment="Bottom" TextAlignment="Left" Margin="0 10">Company Name</TextBlock>
+        <TextBox Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="4" FontSize="18" x:Name="CompanyName"/>
+        
+        <TextBlock Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="4" FontSize="20" FontStyle="Oblique" 
+                   VerticalAlignment="Bottom" TextAlignment="Left" Margin="0 10">Phone Number</TextBlock>
+        <TextBox Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="4" FontSize="18" x:Name="PhoneNumber"/>
+        
+        <Button Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="2" 
+                FontSize="18" x:Name="SaveContactButton">Save Contact</Button>
+    </Grid>
+</Page>
