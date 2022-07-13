@@ -12,8 +12,7 @@ namespace ContactBook.Contact.Domain.Mappings
         {
             CreateMap<ContactCreateModel, EntityContact>();
             CreateMap<EntityContact, DomainContact>();
-            //CreateMap<IEnumerable<EntityContact>, IEnumerable<DomainContact>>();
-            CreateMap<List<EntityContact>?, List<DomainContact>?>();
+            CreateMap<IEnumerable<EntityContact>, List<DomainContact>>();
         }
     }
 }
