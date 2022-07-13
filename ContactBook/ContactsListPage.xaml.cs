@@ -15,13 +15,20 @@ namespace ContactBook
             InitializeComponent();
             _contactService = contactService;
 
-            DisplayContacts();
+            DisplayAllContacts();
+            ContactSearchField.TextChanged += (sender, args) => { DisplaySearchResults(ContactSearchField.Text);};
         }
 
-        private async void DisplayContacts()
+        private async void DisplayAllContacts()
         {
             var contacts = await _contactService.GetAllContacts();
             ContactsList.ItemsSource = contacts.ToList();
+        }
+
+        private async void DisplaySearchResults(string searchString)
+        {
+            var searchResult = await _contactService.GetSearchResult(searchString);
+            ContactsList.ItemsSource = searchResult.ToList();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using AutoMapper;
 using ContactBook.Contact.Persistence;
 using ContactBook.Contracts.Contact;
@@ -37,6 +38,23 @@ namespace ContactBook.Contact.Domain
             var mappedContact = _mapper.Map<DomainContact>(entityContact);
             
             return mappedContact;
+        }
+
+        public async Task<IEnumerable<DomainContact>> GetSearchResult(string searchString)
+        {
+            if (string.IsNullOrWhiteSpace(searchString))
+            {
+                return await GetAllContacts();
+            }
+
+            var foundByName = await GetContactsByName(searchString);
+            var foundByNumber = await GetContactsByPhoneNumber(searchString);
+                
+            var result = new List<DomainContact>();
+            result.AddRange(foundByName);
+            result.AddRange(foundByNumber);
+
+            return result;
         }
 
         public async Task<IEnumerable<DomainContact>> GetContactsByName(string name)
