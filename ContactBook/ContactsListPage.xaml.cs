@@ -10,11 +10,11 @@ namespace ContactBook
     {
         private readonly IContactService _contactService;
         
-        public ContactsListPage()
+        public ContactsListPage(IContactService contactService)
         {
             InitializeComponent();
-            _contactService = new ContactService();
-            
+            _contactService = contactService;
+
             DisplayContacts();
         }
 

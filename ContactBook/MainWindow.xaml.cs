@@ -13,7 +13,22 @@ namespace ContactBook
         public MainWindow()
         {
             InitializeComponent();
-            WindowContent.Content = new ContactsListPage();
+            _contactService = new ContactService();
+
+            AddContactButton.Click += AddContactButtonOnClick;
+            ContactsButton.Click += ContactsButtonOnClick;
+            
+            WindowContent.Content = new ContactsListPage(_contactService);
+        }
+
+        private void AddContactButtonOnClick(object s, RoutedEventArgs e)
+        {
+            WindowContent.Content = new AddContactPage(_contactService);
+        }
+
+        private void ContactsButtonOnClick(object s, RoutedEventArgs e)
+        {
+            WindowContent.Content = new ContactsListPage(_contactService);
         }
     }
 }
