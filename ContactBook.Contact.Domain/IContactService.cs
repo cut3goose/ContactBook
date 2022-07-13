@@ -9,6 +9,7 @@ namespace ContactBook.Contact.Domain
     {
         Task? AddContact(ContactCreateModel contact);
         Task<DomainContact> GetContact(int contactId);
-        Task<IEnumerable<DomainContact>> GetAllContacts();
+        Task<IEnumerable<DomainContact>> GetContactsByName(string name);
+        Task<IEnumerable<DomainContact>> GetContactsByPhoneNumber(string phoneNumber);
     }
 }

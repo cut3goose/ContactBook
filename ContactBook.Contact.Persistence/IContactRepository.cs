@@ -8,6 +8,7 @@ namespace ContactBook.Contact.Persistence
     {
         Task AddContact(EntityContact contact);
         Task<EntityContact> GetContact(int contactId);
-        Task<IEnumerable<EntityContact>> GetAllContacts();
+        Task<IEnumerable<EntityContact>> GetContactsByName(string name);
+        Task<IEnumerable<EntityContact>> GetContactsByPhoneNumber(string phoneNumber);
     }
 }

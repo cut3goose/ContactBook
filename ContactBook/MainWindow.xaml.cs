@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows;
 using ContactBook.Contact.Domain;
 using ContactBook.Contracts.Contact;
@@ -21,11 +22,8 @@ namespace ContactBook
 
         private async void Test()
         {
-            await _contactService.AddContact(new ContactCreateModel{Name = "Rodion", Surname = "Sergeev", CompanyName = "Crowtouch", 
-                PhoneNumber = "+79674617869"})!;
-
-            var contact = await _contactService.GetContact(1);
-            Console.WriteLine(contact.Name);
+            var contact = await _contactService.GetContactsByName("Rod");
+            Console.WriteLine(contact.First().Name);
         }
     }
 }

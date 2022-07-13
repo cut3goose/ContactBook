@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using AutoMapper;
 using ContactBook.Contracts.Contact;
 using DomainContact = ContactBook.Contact.Domain.Models.Contact;
 using EntityContact = ContactBook.Contact.Persistence.Entities.Contact;
@@ -11,7 +12,8 @@ namespace ContactBook.Contact.Domain.Mappings
         {
             CreateMap<ContactCreateModel, EntityContact>();
             CreateMap<EntityContact, DomainContact>();
-            //Pagination
+            //CreateMap<IEnumerable<EntityContact>, IEnumerable<DomainContact>>();
+            CreateMap<List<EntityContact>?, List<DomainContact>?>();
         }
     }
 }

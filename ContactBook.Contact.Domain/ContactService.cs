@@ -39,9 +39,20 @@ namespace ContactBook.Contact.Domain
             return mappedContact;
         }
 
-        public Task<IEnumerable<DomainContact>> GetAllContacts()
+        public async Task<IEnumerable<DomainContact>> GetContactsByName(string name)
         {
-            throw new System.NotImplementedException();
+            var entityContacts = await _contactRepository.GetContactsByName(name);
+            var mappedContacts = _mapper.Map<IEnumerable<DomainContact>>(entityContacts);
+
+            return mappedContacts;
+        }
+
+        public async Task<IEnumerable<DomainContact>> GetContactsByPhoneNumber(string phoneNumber)
+        {
+            var entityContacts = await _contactRepository.GetContactsByPhoneNumber(phoneNumber);
+            var mappedContacts = _mapper.Map<IEnumerable<DomainContact>>(entityContacts);
+
+            return mappedContacts;
         }
     }
 }
