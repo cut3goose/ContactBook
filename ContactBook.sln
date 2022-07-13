@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBook", "ContactBook\ContactBook.csproj", "{8A6FA632-DEF4-4DD4-BC70-BDDAA08A8698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBook.Contact.Persistence", "ContactBook.Contact.Persistence\ContactBook.Contact.Persistence.csproj", "{4A6B523B-1727-4159-BA05-BD125E12F39B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBook.Contact.Domain", "ContactBook.Contact.Domain\ContactBook.Contact.Domain.csproj", "{0F1A4864-562A-4105-B5D0-A10325A447D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBook.Contracts", "ContactBook.Contracts\ContactBook.Contracts.csproj", "{79402703-6AFF-4B7E-945E-7262D4A9E9B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A6FA632-DEF4-4DD4-BC70-BDDAA08A8698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6FA632-DEF4-4DD4-BC70-BDDAA08A8698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6FA632-DEF4-4DD4-BC70-BDDAA08A8698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6FA632-DEF4-4DD4-BC70-BDDAA08A8698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A6B523B-1727-4159-BA05-BD125E12F39B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6B523B-1727-4159-BA05-BD125E12F39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6B523B-1727-4159-BA05-BD125E12F39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6B523B-1727-4159-BA05-BD125E12F39B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1A4864-562A-4105-B5D0-A10325A447D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1A4864-562A-4105-B5D0-A10325A447D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1A4864-562A-4105-B5D0-A10325A447D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1A4864-562A-4105-B5D0-A10325A447D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79402703-6AFF-4B7E-945E-7262D4A9E9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79402703-6AFF-4B7E-945E-7262D4A9E9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79402703-6AFF-4B7E-945E-7262D4A9E9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79402703-6AFF-4B7E-945E-7262D4A9E9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

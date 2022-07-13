@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ContactBook.Contact.Domain\ContactBook.Contact.Domain.csproj" />
+      <ProjectReference Include="..\ContactBook.Contracts\ContactBook.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>
