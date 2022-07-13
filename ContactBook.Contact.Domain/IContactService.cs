@@ -11,5 +11,6 @@ namespace ContactBook.Contact.Domain
         Task<DomainContact> GetContact(int contactId);
         Task<IEnumerable<DomainContact>> GetContactsByName(string name);
         Task<IEnumerable<DomainContact>> GetContactsByPhoneNumber(string phoneNumber);
+        Task<IEnumerable<DomainContact>> GetAllContacts();
     }
 }

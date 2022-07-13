@@ -13,7 +13,7 @@ namespace ContactBook
         public MainWindow()
         {
             InitializeComponent();
-            WindowContent.Content = new AddContactPage();
+            WindowContent.Content = new ContactsListPage();
         }
     }
 }

@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBook.Contact.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBook.Contracts", "ContactBook.Contracts\ContactBook.Contracts.csproj", "{79402703-6AFF-4B7E-945E-7262D4A9E9B3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{AB21B0D9-709C-4730-92E9-19FFEACBFB6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contact", "Contact", "{99EE1D25-0D8C-452A-9E21-C78F74338FFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,8 @@ Global
 		{79402703-6AFF-4B7E-945E-7262D4A9E9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79402703-6AFF-4B7E-945E-7262D4A9E9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79402703-6AFF-4B7E-945E-7262D4A9E9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99EE1D25-0D8C-452A-9E21-C78F74338FFD} = {AB21B0D9-709C-4730-92E9-19FFEACBFB6A}
 	EndGlobalSection
 EndGlobal

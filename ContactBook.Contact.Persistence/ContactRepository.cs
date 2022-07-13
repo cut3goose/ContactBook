@@ -42,5 +42,13 @@ namespace ContactBook.Contact.Persistence
 
             return foundContacts;
         }
+
+        public async Task<IEnumerable<EntityContact>> GetAllContacts()
+        {
+            var contactsAmount = await _dbContext.Contacts.CountAsync();
+            var foundContacts = await _dbContext.Contacts.Take(contactsAmount).ToListAsync();
+
+            return foundContacts;
+        }
     }
 }

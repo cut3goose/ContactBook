@@ -54,5 +54,13 @@ namespace ContactBook.Contact.Domain
 
             return mappedContacts;
         }
+
+        public async Task<IEnumerable<DomainContact>> GetAllContacts()
+        {
+            var entityContacts = await _contactRepository.GetAllContacts();
+            var mappedContacts = _mapper.Map<IEnumerable<DomainContact>>(entityContacts);
+
+            return mappedContacts;
+        }
     }
 }

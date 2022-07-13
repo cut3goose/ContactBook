@@ -1,0 +1,63 @@
+﻿<Page x:Class="ContactBook.ContactsListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:ContactBook"
+      mc:Ignorable="d"
+      Title="ContactsListPage" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <ListBox Grid.Column="1" Grid.ColumnSpan="8" Grid.RowSpan="7" x:Name="ContactsList">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        
+                        <TextBlock Grid.Column="0" Text="{Binding Name}" FontSize="18" />
+                        <TextBlock Grid.Column="1" Text="{Binding Surname}" FontSize="18" Margin="10 0" />
+                        <TextBlock Grid.Column="2" Text="{Binding CompanyName}" FontSize="18" />
+                        <TextBlock Grid.Row="1" Grid.ColumnSpan="3" 
+                                   Text="{Binding PhoneNumber}" FontSize="16" Margin="0 5"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        <TextBox Grid.Column="3" Grid.Row="8" Grid.ColumnSpan="4" FontSize="18" x:Name="ContactSearchField"></TextBox>
+    </Grid>
+</Page>

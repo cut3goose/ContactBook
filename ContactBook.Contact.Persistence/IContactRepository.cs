@@ -10,5 +10,6 @@ namespace ContactBook.Contact.Persistence
         Task<EntityContact> GetContact(int contactId);
         Task<IEnumerable<EntityContact>> GetContactsByName(string name);
         Task<IEnumerable<EntityContact>> GetContactsByPhoneNumber(string phoneNumber);
+        Task<IEnumerable<EntityContact>> GetAllContacts();
     }
 }
